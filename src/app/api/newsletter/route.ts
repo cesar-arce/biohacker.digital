@@ -4,7 +4,6 @@ import { Resend } from 'resend';
 
 export async function POST(req: NextRequest) {
   try {
-    const resend = new Resend(process.env.RESEND_API_KEY);
     const { email, locale = 'en' } = await req.json();
 
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
@@ -22,21 +21,19 @@ export async function POST(req: NextRequest) {
       // Continue anyway — don't block email send on DB failure
     }
 
-    // Send welcome email via Resend
-    if (process.env.RESEND_API_KEY) {
-      const subjects: Record<string, string> = {
-        en: "Your Free Biohacking Starter Kit is ready 🧬",
-        'fr-CA': "Votre Kit de Démarrage Biohacking est prêt 🧬",
-        es: "Tu Kit de Inicio de Biohacking está listo 🧬",
-      };
-
-      await resend.emails.send({
-        from: "The Biohacker's Guide <hello@biohacker.digital>",
-        to: email,
-        subject: subjects[locale] ?? subjects['en'],
-        html: buildWelcomeEmail(locale),
-      });
-    }
+    // Send welcome email
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    const subjects: Record<string, string> = {
+      en: "Your Free Biohacking Starter Kit is ready 🧬",
+      'fr-CA': "Votre Kit de Démarrage Biohacking est prêt 🧬",
+      es: "Tu Kit de Inicio de Biohacking está listo 🧬",
+    };
+    await resend.emails.send({
+      from: "Biohacker.digital <noreply@biohacker.digital>",
+      to: email,
+      subject: subjects[locale] ?? subjects['en'],
+      html: buildWelcomeEmail(locale),
+    });
 
     return NextResponse.json({ success: true });
   } catch (err) {

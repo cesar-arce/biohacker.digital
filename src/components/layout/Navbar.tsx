@@ -4,7 +4,6 @@ import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import LanguageSwitcher from './LanguageSwitcher';
-import UserMenu from '@/components/auth/UserMenu';
 
 export default function Navbar() {
   const t = useTranslations('nav');
@@ -61,7 +60,6 @@ export default function Navbar() {
         {/* Right side */}
         <div className="flex items-center gap-3">
           <LanguageSwitcher />
-          <UserMenu />
           {/* Mobile menu button */}
           <button
             className="md:hidden p-2 text-zinc-400 hover:text-white"
