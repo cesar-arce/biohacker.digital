@@ -3,8 +3,6 @@ import { createClient as createServerClient } from '@/lib/supabase/server';
 import { createClient as createAdminClient } from '@supabase/supabase-js';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const SUBJECTS: Record<string, string> = {
   en: 'Your sign-in link for Biohacker.digital',
   es: 'Tu enlace de acceso a Biohacker.digital',
@@ -31,6 +29,7 @@ const IGNORES: Record<string, string> = {
 
 export async function POST(req: NextRequest) {
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const { email, locale = 'en', redirectTo } = await req.json();
 
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
