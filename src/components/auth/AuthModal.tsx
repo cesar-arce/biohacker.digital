@@ -1,42 +1,143 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 
-type Step = 'options' | 'email' | 'sent';
+type Step = 'email' | 'register' | 'welcome-back' | 'done';
 
 interface AuthModalProps {
   onClose: () => void;
 }
 
+const INTERESTS = [
+  { value: 'geobiology',    en: 'Geobiology',          es: 'Geobiología',       fr: 'Géobiologie' },
+  { value: 'geopathies',   en: 'Geopathies',           es: 'Geopatías',         fr: 'Géopathies' },
+  { value: 'radiesthesia', en: 'Radiesthesia',         es: 'Radiestesia',       fr: 'Radiesthésie' },
+  { value: 'electroculture',en: 'Electroculture',      es: 'Electrocultura',    fr: 'Électroculture' },
+  { value: 'emf',          en: 'EMF & Electrosmog',    es: 'EMF & Electrosmog', fr: 'CEM & Électrosmog' },
+  { value: 'all',          en: 'All topics',           es: 'Todos los temas',   fr: 'Tous les sujets' },
+];
+
+const COPY = {
+  en: {
+    title: 'Join the Community',
+    subtitle: 'Enter your email to continue',
+    emailLabel: 'Email address',
+    emailPlaceholder: 'you@example.com',
+    continueBtn: 'Continue',
+    backBtn: '← Back',
+    welcomeBackTitle: '👋 Welcome back!',
+    welcomeBackSub: 'Great to see you again. Enjoy the site!',
+    registerTitle: '👋 Welcome!',
+    registerSub: 'One quick step to join our community.',
+    nameLabel: 'Your name',
+    namePlaceholder: 'César',
+    interestLabel: 'Main topic of interest',
+    interestDefault: 'Select a topic…',
+    joinBtn: 'Join the Community',
+    doneTitle: '🌿 You\'re in!',
+    doneSub: 'Welcome to the Biohacker community. Enjoy exploring!',
+    closeBtn: 'Start exploring',
+  },
+  es: {
+    title: 'Únete a la Comunidad',
+    subtitle: 'Ingresa tu correo para continuar',
+    emailLabel: 'Correo electrónico',
+    emailPlaceholder: 'tu@correo.com',
+    continueBtn: 'Continuar',
+    backBtn: '← Volver',
+    welcomeBackTitle: '👋 ¡Bienvenido de vuelta!',
+    welcomeBackSub: '¡Qué bueno verte de nuevo! Disfruta el sitio.',
+    registerTitle: '👋 ¡Bienvenido!',
+    registerSub: 'Un paso rápido para unirte a nuestra comunidad.',
+    nameLabel: 'Tu nombre',
+    namePlaceholder: 'César',
+    interestLabel: 'Tema de interés principal',
+    interestDefault: 'Selecciona un tema…',
+    joinBtn: 'Unirme a la Comunidad',
+    doneTitle: '🌿 ¡Ya eres parte!',
+    doneSub: 'Bienvenido a la comunidad Biohacker. ¡Disfruta explorando!',
+    closeBtn: 'Comenzar a explorar',
+  },
+  'fr-CA': {
+    title: 'Rejoindre la Communauté',
+    subtitle: 'Entrez votre courriel pour continuer',
+    emailLabel: 'Adresse courriel',
+    emailPlaceholder: 'vous@courriel.com',
+    continueBtn: 'Continuer',
+    backBtn: '← Retour',
+    welcomeBackTitle: '👋 Bon retour !',
+    welcomeBackSub: 'Ravi de vous revoir. Bonne visite !',
+    registerTitle: '👋 Bienvenue !',
+    registerSub: 'Une étape rapide pour rejoindre notre communauté.',
+    nameLabel: 'Votre prénom',
+    namePlaceholder: 'César',
+    interestLabel: 'Sujet d\'intérêt principal',
+    interestDefault: 'Choisissez un sujet…',
+    joinBtn: 'Rejoindre la Communauté',
+    doneTitle: '🌿 Vous êtes des nôtres !',
+    doneSub: 'Bienvenue dans la communauté Biohacker. Bonne exploration !',
+    closeBtn: 'Commencer à explorer',
+  },
+};
+
 export default function AuthModal({ onClose }: AuthModalProps) {
-  const t = useTranslations('auth');
   const locale = useLocale();
-  const [step, setStep] = useState<Step>('options');
+  const c = COPY[locale as keyof typeof COPY] ?? COPY.en;
+
+  const [step, setStep] = useState<Step>('email');
   const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [interest, setInterest] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [fromGoogle, setFromGoogle] = useState(false);
 
-  async function handleEmail(e: React.FormEvent) {
+  async function handleEmailSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!email || loading) return;
     setLoading(true);
     setError('');
     try {
-      const res = await fetch('/api/auth/magic-link', {
+      const res = await fetch('/api/auth/check-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, locale }),
+        body: JSON.stringify({ email }),
+      });
+      const data = await res.json();
+      if (data.exists) {
+        setStep('welcome-back');
+        setTimeout(() => onClose(), 2500);
+      } else {
+        setStep('register');
+      }
+    } catch {
+      setError('Something went wrong. Please try again.');
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function handleRegister(e: React.FormEvent) {
+    e.preventDefault();
+    if (!name || loading) return;
+    setLoading(true);
+    setError('');
+    try {
+      const res = await fetch('/api/auth/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, name, interest, locale }),
       });
       const data = await res.json();
       if (!res.ok) {
-        setError(data.error ?? 'Something went wrong. Please try again.');
+        setError(data.error ?? 'Something went wrong.');
         return;
       }
-      setStep('sent');
+      setStep('done');
+    } catch {
+      setError('Something went wrong. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -51,103 +152,111 @@ export default function AuthModal({ onClose }: AuthModalProps) {
               <span className="text-zinc-950 font-black text-sm">BH</span>
             </div>
             <div>
-              <DialogTitle>{t('signIn')}</DialogTitle>
-              <DialogDescription>Join the biohacking community</DialogDescription>
+              <DialogTitle>{c.title}</DialogTitle>
+              <DialogDescription>{c.subtitle}</DialogDescription>
             </div>
           </div>
         </DialogHeader>
 
         <div className="p-6">
 
-          {/* ── Step 1: Options ── */}
-          {step === 'options' && (
-            <div className="flex flex-col gap-3">
-              {/* Google button */}
-              <button
-                onClick={() => { setFromGoogle(true); setStep('email'); }}
-                className="w-full flex items-center justify-center gap-3 px-4 py-3 rounded-xl border border-zinc-700 text-white hover:border-zinc-500 hover:bg-zinc-800 transition-all text-sm font-medium"
-              >
-                <svg className="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24">
-                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/>
-                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
-                </svg>
-                {t('withGoogle')}
-              </button>
-
-              {/* Divider */}
-              <div className="flex items-center gap-3 my-1">
-                <div className="flex-1 h-px bg-zinc-800" />
-                <span className="text-zinc-600 text-xs uppercase tracking-widest">or</span>
-                <div className="flex-1 h-px bg-zinc-800" />
-              </div>
-
-              {/* Email button */}
-              <button
-                onClick={() => { setFromGoogle(false); setStep('email'); }}
-                className="w-full flex items-center justify-center gap-3 px-4 py-3 rounded-xl bg-green-400 text-zinc-950 font-bold hover:bg-green-300 transition-colors text-sm"
-              >
-                ✉ {t('withEmail')}
-              </button>
-
-              <p className="text-zinc-600 text-xs text-center mt-2">
-                No password needed. We&apos;ll send a secure sign-in link.
-              </p>
-            </div>
-          )}
-
-          {/* ── Step 2: Email form ── */}
+          {/* ── Step 1: Email ── */}
           {step === 'email' && (
-            <>
-              {fromGoogle && (
-                <div className="flex items-start gap-3 p-3 mb-4 rounded-xl bg-zinc-800 border border-zinc-700">
-                  <span className="text-lg">💡</span>
-                  <p className="text-zinc-300 text-sm leading-snug">
-                    Google sign-in is coming soon. Enter your email and we&apos;ll send you a secure magic link instead.
-                  </p>
-                </div>
-              )}
-              <form onSubmit={handleEmail} className="flex flex-col gap-3">
-                <label className="text-zinc-400 text-sm font-medium">{t('emailLabel')}</label>
+            <form onSubmit={handleEmailSubmit} className="flex flex-col gap-4">
+              <div>
+                <label className="block text-zinc-400 text-sm font-medium mb-1.5">{c.emailLabel}</label>
                 <input
                   type="email"
                   required
                   autoFocus
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="you@example.com"
+                  placeholder={c.emailPlaceholder}
                   className="w-full px-4 py-3 rounded-xl bg-zinc-800 border border-zinc-700 text-white placeholder-zinc-500 focus:outline-none focus:border-green-400 transition-colors"
                 />
-                {error && <p className="text-red-400 text-sm">{error}</p>}
-                <Button type="submit" disabled={loading} size="lg" className="w-full">
-                  {loading ? '...' : t('withEmail')}
-                </Button>
-              </form>
-              <button
-                onClick={() => { setStep('options'); setError(''); }}
-                className="mt-3 w-full text-zinc-500 text-xs hover:text-zinc-300 transition-colors text-center"
-              >
-                ← Back
-              </button>
-            </>
+              </div>
+              {error && <p className="text-red-400 text-sm">{error}</p>}
+              <Button type="submit" disabled={loading} size="lg" className="w-full">
+                {loading ? '...' : c.continueBtn}
+              </Button>
+            </form>
           )}
 
-          {/* ── Step 3: Email sent ── */}
-          {step === 'sent' && (
-            <div className="text-center py-4">
-              <div className="text-4xl mb-3">📬</div>
-              <p className="text-white font-semibold mb-2">{t('checkEmail')}</p>
-              <p className="text-zinc-500 text-sm">{email}</p>
-              <p className="text-amber-400/80 text-xs mt-3 bg-amber-400/10 border border-amber-400/20 rounded-lg px-3 py-2">
-                📁 {locale === 'es' ? 'Revise su carpeta de Spam si no recibe el correo.' : locale === 'fr-CA' ? 'Vérifiez votre dossier Spam si vous ne recevez pas le courriel.' : 'Please check your Spam folder if you don\'t receive the email.'}
-              </p>
+          {/* ── Step 2: Register (new user) ── */}
+          {step === 'register' && (
+            <form onSubmit={handleRegister} className="flex flex-col gap-4">
+              <div className="text-center mb-2">
+                <p className="text-white font-bold text-lg">{c.registerTitle}</p>
+                <p className="text-zinc-500 text-sm">{c.registerSub}</p>
+              </div>
+
+              <div>
+                <label className="block text-zinc-400 text-sm font-medium mb-1.5">{c.nameLabel}</label>
+                <input
+                  type="text"
+                  required
+                  autoFocus
+                  maxLength={80}
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder={c.namePlaceholder}
+                  className="w-full px-4 py-3 rounded-xl bg-zinc-800 border border-zinc-700 text-white placeholder-zinc-500 focus:outline-none focus:border-green-400 transition-colors"
+                />
+              </div>
+
+              <div>
+                <label className="block text-zinc-400 text-sm font-medium mb-1.5">{c.interestLabel}</label>
+                <select
+                  value={interest}
+                  onChange={(e) => setInterest(e.target.value)}
+                  className="w-full px-4 py-3 rounded-xl bg-zinc-800 border border-zinc-700 text-white focus:outline-none focus:border-green-400 transition-colors appearance-none"
+                >
+                  <option value="">{c.interestDefault}</option>
+                  {INTERESTS.map((item) => (
+                    <option key={item.value} value={item.value}>
+                      {locale === 'es' ? item.es : locale === 'fr-CA' ? item.fr : item.en}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {error && <p className="text-red-400 text-sm">{error}</p>}
+
+              <Button type="submit" disabled={loading || !name.trim()} size="lg" className="w-full">
+                {loading ? '...' : c.joinBtn}
+              </Button>
+
               <button
+                type="button"
                 onClick={() => { setStep('email'); setError(''); }}
-                className="mt-4 text-green-400 text-sm hover:underline"
+                className="text-zinc-500 text-xs hover:text-zinc-300 transition-colors text-center"
               >
-                {locale === 'es' ? 'Usar un correo diferente' : locale === 'fr-CA' ? 'Utiliser un autre courriel' : 'Use a different email'}
+                {c.backBtn}
               </button>
+            </form>
+          )}
+
+          {/* ── Step 3a: Welcome back (existing user) ── */}
+          {step === 'welcome-back' && (
+            <div className="text-center py-6">
+              <div className="text-5xl mb-4">👋</div>
+              <p className="text-white font-bold text-xl mb-2">{c.welcomeBackTitle}</p>
+              <p className="text-zinc-400 text-sm">{c.welcomeBackSub}</p>
+              <div className="mt-4 flex justify-center">
+                <div className="w-2 h-2 rounded-full bg-green-400 animate-ping" />
+              </div>
+            </div>
+          )}
+
+          {/* ── Step 3b: Done (new user registered) ── */}
+          {step === 'done' && (
+            <div className="text-center py-6">
+              <div className="text-5xl mb-4">🌿</div>
+              <p className="text-white font-bold text-xl mb-2">{c.doneTitle}</p>
+              <p className="text-zinc-400 text-sm mb-6">{c.doneSub}</p>
+              <Button onClick={onClose} size="lg" className="w-full">
+                {c.closeBtn}
+              </Button>
             </div>
           )}
 
