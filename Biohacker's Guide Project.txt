@@ -3,6 +3,8 @@ Biohacker's Guide Project
 VS Code
 C:\Users\cesar\Claude\Projects\biohacker-digital>npm run build
 
+https://affiliate-program.amazon.com/home/account/sitestripe
+StoreID: biohackerdigi-20
 
 
 https://biohacker.digital 
@@ -57,7 +59,7 @@ https://vercel.com/account/settings/authentication
 
 
 
-
+NEXT_PUBLIC_AMAZON_AFFILIATE_TAG  StoreID: biohackerdigi-20
 
 
 Project ID
@@ -103,7 +105,7 @@ Radiesthesia & Radionics Booklet: https://www.amazon.com/dp/B0FRMSLJCK
 Electroculture: https://www.amazon.com/dp/B0FRSJYRY1
 
 ---------
-
+Mis Libros
 ASIN Books
 Geobiology: https://www.amazon.com/dp/B0FJNL59YC
 
@@ -118,6 +120,10 @@ Electroculture: https://www.amazon.com/dp/B0FRSJYRY1
 The Lost Secret of Inca’s Stones: https://www.amazon.com/dp/B0FTWNVW78
 
 ----------------------------
+Productos para la venta desde mi Pagina Web
+
+
+https://www.amazon.ca/dp/B0H18M9822
 
 
 

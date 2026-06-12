@@ -2,12 +2,14 @@
 
 import { useTranslations, useLocale } from 'next-intl';
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/toast';
 
 export default function NewsletterFloat() {
   const t = useTranslations('newsletter');
   const locale = useLocale();
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
@@ -48,7 +50,7 @@ export default function NewsletterFloat() {
     }
   }
 
-  if (dismissed) return null;
+  if (dismissed || pathname.includes('/free-guide')) return null;
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
