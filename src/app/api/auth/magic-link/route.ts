@@ -107,7 +107,7 @@ export async function POST(req: NextRequest) {
 </html>`;
 
     const { error: sendError } = await resend.emails.send({
-      from: 'Biohacker.digital <onboarding@resend.dev>',
+      from: 'Biohacker.digital <noreply@biohacker.digital>',
       to: email,
       subject,
       html,
