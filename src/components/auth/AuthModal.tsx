@@ -96,51 +96,18 @@ export default function AuthModal({ onClose }: AuthModalProps) {
 
   async function handleEmailSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!email || loading) return;
-    setLoading(true);
-    setError('');
-    try {
-      const res = await fetch('/api/auth/check-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
-      });
-      const data = await res.json();
-      if (data.exists) {
-        setStep('welcome-back');
-        setTimeout(() => onClose(), 2500);
-      } else {
-        setStep('register');
-      }
-    } catch {
-      setError('Something went wrong. Please try again.');
-    } finally {
-      setLoading(false);
-    }
+    if (!email) return;
+    // Save email silently — no feedback, no redirect
+    fetch('/api/auth/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, name: '', interest: '', locale }),
+    }).catch(() => {});
+    onClose();
   }
 
-  async function handleRegister(e: React.FormEvent) {
+  function handleRegister(e: React.FormEvent) {
     e.preventDefault();
-    if (!name || loading) return;
-    setLoading(true);
-    setError('');
-    try {
-      const res = await fetch('/api/auth/register', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, name, interest, locale }),
-      });
-      const data = await res.json();
-      if (!res.ok) {
-        setError(data.error ?? 'Something went wrong.');
-        return;
-      }
-      setStep('done');
-    } catch {
-      setError('Something went wrong. Please try again.');
-    } finally {
-      setLoading(false);
-    }
   }
 
   return (
