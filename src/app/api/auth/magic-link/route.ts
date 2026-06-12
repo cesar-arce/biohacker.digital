@@ -52,7 +52,7 @@ export async function POST(req: NextRequest) {
     const { data, error: linkError } = await admin.auth.admin.generateLink({
       type: 'magiclink',
       email,
-      options: { redirectTo: redirectTo || `${process.env.NEXT_PUBLIC_SITE_URL ?? 'https://biohacker.digital'}/${locale}/community` },
+      options: { redirectTo: redirectTo || `${process.env.NEXT_PUBLIC_SITE_URL ?? 'https://biohacker.digital'}/${locale}/blog` },
     });
 
     if (linkError || !data?.properties?.action_link) {

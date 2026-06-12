@@ -139,11 +139,14 @@ export default function AuthModal({ onClose }: AuthModalProps) {
               <div className="text-4xl mb-3">📬</div>
               <p className="text-white font-semibold mb-2">{t('checkEmail')}</p>
               <p className="text-zinc-500 text-sm">{email}</p>
+              <p className="text-amber-400/80 text-xs mt-3 bg-amber-400/10 border border-amber-400/20 rounded-lg px-3 py-2">
+                📁 {locale === 'es' ? 'Revise su carpeta de Spam si no recibe el correo.' : locale === 'fr-CA' ? 'Vérifiez votre dossier Spam si vous ne recevez pas le courriel.' : 'Please check your Spam folder if you don\'t receive the email.'}
+              </p>
               <button
                 onClick={() => { setStep('email'); setError(''); }}
                 className="mt-4 text-green-400 text-sm hover:underline"
               >
-                Use a different email
+                {locale === 'es' ? 'Usar un correo diferente' : locale === 'fr-CA' ? 'Utiliser un autre courriel' : 'Use a different email'}
               </button>
             </div>
           )}
