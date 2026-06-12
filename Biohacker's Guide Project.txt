@@ -1,5 +1,10 @@
 Biohacker's Guide Project
 
+VS Code
+C:\Users\cesar\Claude\Projects\biohacker-digital>npm run build
+
+
+
 https://biohacker.digital 
 Reinicia el servidor (Ctrl+C y npm run dev)
 
@@ -12,6 +17,52 @@ Password: MancoCapac@1
 
 https://resend.com/onboarding
 
+
+vercel.com
+
+
+Apuntar DNS en GoDaddy
+Ve a dcc.godaddy.com → My Domains → biohacker.digital → DNS
+Busca el registro "A" que apunta a GoDaddy y edítalo
+Cambia el valor por la IP que te da Vercel (algo como 76.76.21.21)
+Agrega un registro CNAME con nombre www apuntando a cname.vercel-dns.com
+Guarda los cambios
+
+Configuraciones iniciales antes de transferir los DNS
+https://dcc.godaddy.com/control/portfolio/biohacker.digital/settings?tab=dns
+Type: A
+Name: @
+Value: WebsiteBuilder Site
+TTL: 1 Hour
+
+Type: CNAME
+Name: www
+Value: biohacker.digital
+TTL: 1 Hour
+
+
+-------------------------------------
+https://resend.com/audience
+https://github.com/cesar-arce/biohacker.digital
+
+https://github.com/cesar-arce/biohacker.digital/settings
+https://biohacker.digital/
+
+https://dcc.godaddy.com/control/portfolio/biohacker.digital/settings?tab=dns
+https://dcc.godaddy.com/control/portfolio/biohacker.digital/settings?ventureId=94c2e476-79d3-470b-91ab-f819b69acfed&ua_placement=shared_header
+
+https://vercel.com/account/settings/authentication
+
+
+
+
+
+
+
+
+Project ID
+Used when interacting with the Vercel API.
+prj_DIOn5Txp30QJvqA5GEIJ9MxMddLF
 
 
 Claude
