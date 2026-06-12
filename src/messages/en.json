@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "home": "Home",
+    "books": "Books",
+    "blog": "Blog",
+    "community": "Community",
+    "resources": "Resources",
+    "about": "About",
+    "products": "Products"
+  },
+  "hero": {
+    "badge": "The Ultimate Biohacking Collection",
+    "title": "Reconnect With Earth,",
+    "titleAccent": "Optimize Your Life",
+    "subtitle": "Science-backed guides to geobiology, geopathies, radiesthesia, and electroculture. Harness invisible earth energies to reclaim your health.",
+    "ctaBooks": "Explore the Collection",
+    "ctaBlog": "Read the Blog",
+    "statsReaders": "Readers",
+    "statsBooks": "Books",
+    "statsCountries": "Countries"
+  },
+  "books": {
+    "title": "The Biohacker's Guide Collection",
+    "subtitle": "Each book is a deep dive into the invisible forces that shape your health and environment.",
+    "buyOnAmazon": "Buy on Amazon",
+    "learnMore": "Learn More",
+    "filterAll": "All",
+    "filterGeobiology": "Geobiology",
+    "filterGeopathies": "Geopathies",
+    "filterRadiesthesia": "Radiesthesia",
+    "filterElectroculture": "Electroculture",
+    "filterPractical": "Practical",
+    "collectionBadge": "The Biohacker's Guide Collection",
+    "insideDiscover": "Inside this book, you'll discover",
+    "affiliateNote": "You will be redirected to Amazon. Affiliate link.",
+    "referencesNote": "Every reference cited is available for the curious reader to verify, explore, and expand upon.",
+    "practicalEdition": "Practical Edition",
+    "alsoBy": "Also by César Arce",
+    "adventureSeries": "Adventure Series",
+    "adventureSeriesTitle": "The Adventures of Caesar Maple",
+    "adventureSeriesSubtitle": "Historical adventure fiction inspired by real expeditions and ancient enigmas.",
+    "adventureBook1Series": "The Adventures of Caesar Maple — Book One",
+    "adventureBook1Title": "The Lost Secret of Inca's Stones",
+    "adventureBook1Desc": "London, 1926. Decorated RAF pilot Caesar Maple thinks he's traded dogfights for dusty archives — until a letter arrives with five unnerving words: \"Beware the Keepers of Heads.\" What begins as a scholarly inquiry becomes a perilous trek from the British Museum to the knife-edged Andes and the uncharted lungs of the Amazon. Guided by clues that should not exist — stones that remember shape, glyphs where no glyphs belong, maps that align temples across continents — Maple and his fractured team race against ruthless rivals to uncover a technology capable of raising empires… or erasing them.",
+    "adventureBook1H1": "Real expeditions and historical enigmas reimagined as adventure",
+    "adventureBook1H2": "Ecuador, Peru, Bolivia: Machu Picchu, Nazca, Tiwanaku & beyond",
+    "adventureBook1H3": "A secret technology — the lost art of ancient builders",
+    "adventureBook1H4": "Perfect for fans of Indiana Jones, Dan Brown & Clive Cussler"
+  },
+  "blog": {
+    "title": "Biohacking Insights",
+    "subtitle": "Evidence-based articles to help you apply the science from the books.",
+    "readMore": "Read More",
+    "minRead": "min read",
+    "latestArticles": "Latest Articles"
+  },
+  "community": {
+    "title": "Ask the Community",
+    "subtitle": "Join thousands of biohackers sharing experiences and answering questions.",
+    "askQuestion": "Ask a Question",
+    "signInToAsk": "Sign in to Ask",
+    "votes": "votes",
+    "answers": "answers",
+    "noAnswers": "Be the first to answer"
+  },
+  "newsletter": {
+    "title": "Get Your Free Biohacking Starter Kit",
+    "subtitle": "Subscribe and receive a free PDF with the top 10 biohacking protocols from the collection.",
+    "placeholder": "Enter your email",
+    "cta": "Get Free Kit",
+    "disclaimer": "No spam. Unsubscribe anytime.",
+    "success": "Check your inbox — your free kit is on the way!"
+  },
+  "footer": {
+    "tagline": "Optimize your biology. Upgrade your life.",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "about": {
+    "title": "About César Arce",
+    "subtitle": "Fighter pilot, explorer, and author of The Biohacker's Guide Collection — bridging ancient wisdom and modern science."
+  },
+  "resources": {
+    "title": "Resources",
+    "subtitle": "Promotional materials and visual guides from The Biohacker's Guide Collection."
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "signUp": "Sign Up",
+    "withGoogle": "Continue with Google",
+    "withEmail": "Continue with Email",
+    "emailLabel": "Email address",
+    "checkEmail": "Check your email for a sign-in link."
+  }
+}

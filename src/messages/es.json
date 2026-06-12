@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "books": "Libros",
+    "blog": "Blog",
+    "community": "Comunidad",
+    "resources": "Recursos",
+    "about": "Acerca de",
+    "products": "Productos"
+  },
+  "hero": {
+    "badge": "La Colección Definitiva de Biohacking",
+    "title": "Reconéctate con la Tierra,",
+    "titleAccent": "Optimiza Tu Vida",
+    "subtitle": "Guías respaldadas por la ciencia sobre geobiología, geopatías, radiestesia y electrocultura. Aprovecha las energías invisibles de la Tierra para recuperar tu salud.",
+    "ctaBooks": "Explorar la Colección",
+    "ctaBlog": "Leer el Blog",
+    "statsReaders": "Lectores",
+    "statsBooks": "Libros",
+    "statsCountries": "Países"
+  },
+  "books": {
+    "title": "La Colección de la Guía del Biohacker",
+    "subtitle": "Cada libro es una inmersión profunda en las fuerzas invisibles que moldean tu salud y entorno.",
+    "buyOnAmazon": "Comprar en Amazon",
+    "learnMore": "Saber Más",
+    "filterAll": "Todos",
+    "filterGeobiology": "Geobiología",
+    "filterGeopathies": "Geopatías",
+    "filterRadiesthesia": "Radiestesia",
+    "filterElectroculture": "Electrocultura",
+    "filterPractical": "Práctico",
+    "collectionBadge": "La Colección de la Guía del Biohacker",
+    "insideDiscover": "Dentro de este libro descubrirás",
+    "affiliateNote": "Serás redirigido a Amazon. Enlace de afiliado.",
+    "referencesNote": "Cada referencia citada está disponible para que el lector curioso la verifique, explore y amplíe.",
+    "practicalEdition": "Edición Práctica",
+    "alsoBy": "También de César Arce",
+    "adventureSeries": "Serie de Aventuras",
+    "adventureSeriesTitle": "Las Aventuras de Caesar Maple",
+    "adventureSeriesSubtitle": "Ficción histórica de aventuras inspirada en expediciones reales y enigmas ancestrales.",
+    "adventureBook1Series": "Las Aventuras de Caesar Maple — Libro Uno",
+    "adventureBook1Title": "El Secreto Perdido de las Piedras Incas",
+    "adventureBook1Desc": "Londres, 1926. El condecorado piloto de la RAF Caesar Maple cree haber cambiado los combates aéreos por archivos polvorientos — hasta que llega una carta con cinco palabras inquietantes: \"Cuidado con los Guardianes de las Cabezas.\" Lo que comienza como una investigación académica se convierte en un viaje peligroso desde el Museo Británico hasta los Andes y la Amazonía. Guiado por pistas que no deberían existir — piedras que recuerdan formas, glifos donde no debería haber glifos, mapas que alinean templos en continentes — Maple y su equipo fragmentado corren contra rivales despiadados para descubrir una tecnología capaz de alzar imperios… o borrarlos.",
+    "adventureBook1H1": "Expediciones reales y enigmas históricos reimaginados como aventura",
+    "adventureBook1H2": "Ecuador, Perú, Bolivia: Machu Picchu, Nazca, Tiwanaku y más",
+    "adventureBook1H3": "Una tecnología secreta — el arte perdido de los constructores ancestrales",
+    "adventureBook1H4": "Perfecto para fans de Indiana Jones, Dan Brown y Clive Cussler"
+  },
+  "blog": {
+    "title": "Perspectivas de Biohacking",
+    "subtitle": "Artículos basados en evidencia para ayudarte a aplicar la ciencia de los libros.",
+    "readMore": "Leer Más",
+    "minRead": "min de lectura",
+    "latestArticles": "Últimos Artículos"
+  },
+  "community": {
+    "title": "Pregunta a la Comunidad",
+    "subtitle": "Únete a miles de biohackers que comparten experiencias y responden preguntas.",
+    "askQuestion": "Hacer una Pregunta",
+    "signInToAsk": "Inicia sesión para preguntar",
+    "votes": "votos",
+    "answers": "respuestas",
+    "noAnswers": "Sé el primero en responder"
+  },
+  "newsletter": {
+    "title": "Obtén Tu Kit de Inicio de Biohacking Gratis",
+    "subtitle": "Suscríbete y recibe un PDF gratuito con los 10 mejores protocolos de biohacking.",
+    "placeholder": "Ingresa tu email",
+    "cta": "Obtener Kit Gratis",
+    "disclaimer": "Sin spam. Cancela cuando quieras.",
+    "success": "¡Revisa tu bandeja de entrada — tu kit gratuito está en camino!"
+  },
+  "footer": {
+    "tagline": "Optimiza tu biología. Mejora tu vida.",
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio"
+  },
+  "about": {
+    "title": "Acerca de César Arce",
+    "subtitle": "Piloto de combate, explorador y autor de La Colección de la Guía del Biohacker — uniendo sabiduría ancestral y ciencia moderna."
+  },
+  "resources": {
+    "title": "Recursos",
+    "subtitle": "Materiales promocionales y guías visuales de La Colección de la Guía del Biohacker."
+  },
+  "auth": {
+    "signIn": "Iniciar Sesión",
+    "signOut": "Cerrar Sesión",
+    "signUp": "Registrarse",
+    "withGoogle": "Continuar con Google",
+    "withEmail": "Continuar con Email",
+    "emailLabel": "Dirección de email",
+    "checkEmail": "Revisa tu email para encontrar el enlace de acceso."
+  }
+}

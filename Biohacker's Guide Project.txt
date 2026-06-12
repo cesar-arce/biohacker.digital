@@ -1,0 +1,589 @@
+Biohacker's Guide Project
+
+https://biohacker.digital 
+Reinicia el servidor (Ctrl+C y npm run dev)
+
+Supabase Dashboard
+https://supabase.com/dashboard/project/uiwjtewbispbtyaeewcc  --- Main Biohacker's Guide Project
+https://supabase.com/dashboard/org/thmyypfmupssqdspmdet
+https://supabase.com/dashboard/project/uiwjtewbispbtyaeewcc/auth/url-configuration
+https://supabase.com/dashboard/project/uiwjtewbispbtyaeewcc/editor/17633
+Password: MancoCapac@1
+
+https://resend.com/onboarding
+
+
+
+Claude
+/init para crear el CLAUDE.md
+
+Supabase
+https://uiwjtewbispbtyaeewcc.supabase.co/auth/v1/callback
+
+
+En Supabase, Name: Biohacker's Guide Project
+URL: https://uiwjtewbispbtyaeewcc.supabase.co
+Publishable key: sb_publishable_npfv2khWLfmtXvdxIjFwqg_OOwPkYUC
+Direct connexion: postgresql://postgres:[YOUR-PASSWORD]@db.uiwjtewbispbtyaeewcc.supabase.co:5432/postgres
+CLI Setup: supabase login
+supabase init
+supabase link --project-ref uiwjtewbispbtyaeewcc
+Secret key: sb_secret_MKzaOnMRAdQt1IaBQG4ZNA_Q0unBnro
+Project ID: uiwjtewbispbtyaeewcc
+Project Region: us-west-2
+
+--------
+AuthOth Google
+Client ID: 583506789335-jnv5ukl90dkfisd51367cdqgocsng9c8.apps.googleusercontent.com
+Client Secret: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
+--------
+https://supabase.com/dashboard/project/uiwjtewbispbtyaeewcc
+
+https://supabase.com/dashboard/project/uiwjtewbispbtyaeewcc/auth/url-configuration
+
+---------
+
+https://linktr.ee/cesararceauthor
+Los Libros de la Colección: The Biohacker's Guide Collection
+Geobiology: https://www.amazon.com/dp/B0FJNL59YC
+Geopathies: https://www.amazon.com/dp/B0FPCY2JZQ
+Radiesthesia: https://www.amazon.com/dp/B0FPCY2JZQ
+Radiesthesia & Radionics Booklet: https://www.amazon.com/dp/B0FRMSLJCK
+Electroculture: https://www.amazon.com/dp/B0FRSJYRY1
+
+---------
+
+ASIN Books
+Geobiology: https://www.amazon.com/dp/B0FJNL59YC
+
+Geopathies: https://www.amazon.com/dp/B0FPCY2JZQ
+
+Radiesthesia: https://www.amazon.com/dp/B0FQPMLT9T
+
+Radiesthesia & Radionics Booklet: https://www.amazon.com/dp/B0FRMSLJCK
+
+Electroculture: https://www.amazon.com/dp/B0FRSJYRY1
+
+The Lost Secret of Inca’s Stones: https://www.amazon.com/dp/B0FTWNVW78
+
+----------------------------
+
+
+
+
+Para filtrar la colección de forma clara, yo usaría palabras clave que sean temáticas, buscables y diferenciadoras para cada libro.
+
+Libro	5 palabras clave recomendadas
+Vol. I – Geobiology	Geobiology, Geopathic Stress, Earth Energies, Hartmann Lines, Healthy Spaces
+Vol. II – Geopathies	Geopathies, Environmental Stress, Neutron Radiation, Vertical Energy Fields, Energy Imbalance
+Vol. III – Radiesthesia	Radiesthesia, Dowsing, Pendulum, Energy Detection, Living Antennas
+Vol. IV – Radiesthesia & Radionics Booklet	Radionics, Pendulum Practice, L-Rods, Energy Manifestation, Solomon Seals
+Vol. V – Electroculture	Electroculture, Atmospheric Electricity, Copper Antennas, Soil Battery, Regenerative Farming
+
+Una versión un poco más comercial para Amazon / buscadores sería:
+
+Libro	Keywords más orientadas a venta
+Vol. I – Geobiology	Geobiology, Geopathic Stress, Earth Energy, Home Energy, Biohacking
+Vol. II – Geopathies	Geopathies, Geopathic Stress, Hidden Radiation, Environmental Energy, Energy Health
+Vol. III – Radiesthesia	Radiesthesia, Dowsing, Pendulum Guide, Energy Work, Intuitive Detection
+Vol. IV – Radiesthesia & Radionics Booklet	Radionics, Dowsing Tools, Manifestation Card, Energy Symbols, Practical Radiesthesia
+Vol. V – Electroculture	Electroculture, Plant Growth, Copper Antenna, Atmospheric Energy, Regenerative Agriculture
+
+----------
+Here description by Book:
+
+----
+
+Geobiology: The Biohacker’s Guide Collection
+
+by CÉSAR ARCE (Author)  Format: Paperback
+
+5.0 5.0 out of 5 stars   (1)
+
+Book 1 of 6: The Biohacker’s Guide Collection
+
+See all formats and editions
+
+📘 Geobiology – The Hidden Blueprint of Life on Earth
+
+The Biohacker’s Guide Collection – Volume I
+
+
+
+Geobiology is the rediscovery of a forgotten science—one that reveals how the Earth’s invisible forces shape every breath you take, every night of sleep, and every cell of your body.
+
+
+
+Every reference cited throughout these pages is available for the curious reader 🧐 to verify, explore, and expand upon.
+
+
+
+For thousands of years, healers and builders understood that life thrives where the Earth’s energy flows in harmony. They placed temples, altars, and homes on precise magnetic nodes—aligning human life with planetary rhythms. Modern science now confirms what ancient wisdom always knew: electromagnetic balance is essential to health.
+
+
+
+In this groundbreaking volume, César Arce bridges physics, biohacking, and ancestral knowledge to uncover how telluric currents, underground water streams, and geomagnetic grids quietly influence your nervous system, your brain waves, and your emotional state.
+
+
+
+From chronic fatigue and insomnia to anxiety and inflammation, subtle environmental distortions—known as geopathic zones—can drain vitality without your awareness. But once you learn to detect and harmonize them, you reclaim the natural coherence your body has always known.
+
+
+
+🧭 Inside this book, you’ll discover:
+
+✅ The science behind the Earth’s magnetic field and its interaction with your biology
+
+✅ How Schumann resonance and geomagnetic fluctuations affect your sleep and immunity
+
+✅ Why ancient cultures built sacred sites on telluric nodes—and what modern architects have forgotten
+
+✅ Practical methods to detect Hartmann and Curry lines, underground water veins, and energetic disturbances
+
+✅ Step-by-step guidance to restore balance, vitality, and harmony in your home or workplace
+
+
+
+✈️ A Pilot’s Perspective on the Moving Earth
+
+As a pilot, César Arce also reveals the hidden drama unfolding above and below us—the shifting magnetic poles.
+
+Today, the magnetic north moves so unpredictably that the World Magnetic Model (WMM)—the reference used by aircraft, GPS satellites, and even smartphones—requires constant recalibration.
+
+
+
+What was once the realm of science fiction is now painted on every runway, printed in every flight plan, and embedded in every GPS update.
+
+The poles are moving. Our systems are adapting.
+
+
+
+The magnetic future is already here—and it’s time we tuned in.
+
+
+
+More than a study of invisible energies, Geobiology is an invitation—to listen again to the ground beneath your feet, to understand that your body is not separate from the planet, but an extension of it.
+
+
+
+🌎 You are not standing on the Earth—you are standing within it.
+
+
+
+This is Volume I of The Biohacker’s Guide Collection—your initiation into the living geometry of nature, where science meets spirit and awareness becomes health.
+
+-----
+
+Geopathies: The Biohacker’s Guide Collection
+
+by César Arce (Author)  Format: Paperback
+
+Book 2 of 6: The Biohacker’s Guide Collection
+
+See all formats and editions
+
+📘 Geopathies – Decode the Hidden Stresses Beneath Your Feet. Reclaim Your Health.
+
+
+
+The Biohacker’s Guide Collection – Volume II
+
+🌎 When the ground beneath you drains your energy, knowledge becomes medicine
+
+
+
+Geopathies unveils the silent yet powerful ways in which the Earth’s disturbed geomagnetic fields, underground water veins, and geological faults can erode human vitality
+
+In this second groundbreaking volume, César Arce takes you beyond theory into the measurable reality of geopathic stress—revealing how invisible distortions in the Earth’s magnetic field can weaken the immune system, disturb sleep, trigger chronic fatigue, and subtly shape emotional balance.
+
+
+
+Every reference cited throughout these pages is available for the curious reader 🧐 to verify, explore, and expand upon.
+
+
+
+This work is the result of decades of research and an exhaustive compilation of medical and bioenergetic treatments once widely practiced—from Roman thermal practices to the electromagnetic healing methods of the early 20th century—many of which have been forgotten, replaced by a purely pharmacological model of science
+
+
+
+Yet the Earth itself remains our greatest teacher
+
+Its fields still pulse, its currents still breathe—and those who learn to read this invisible language can rediscover what modern medicine has overlooked: the geometry of health
+
+
+
+From ancient wisdom to cutting-edge measurement tools, Geopathies bridges science and intuition, guiding you step by step in detecting, neutralizing, and transforming harmful energetic zones into spaces that nourish life
+
+
+
+
+
+🛏️ The Hidden Stress Beneath Your Bed
+
+Imagine your bed resting over a geopathic stress point—what should be a night of deep rest becomes hours of tossing and turning.
+
+You wake up exhausted, blaming the mattress, the pillows, or last night’s dinner
+
+
+
+But what if the problem isn’t on your bed… it’s beneath it?
+
+
+
+A hidden disturbance in the Earth’s magnetic field can drain your vitality night after night—silently affecting your sleep, recovery, and mood
+
+Yet, when you travel, you often sleep perfectly
+
+Was it the luxury of the hotel?
+
+Or simply the absence of that invisible stress line crossing your bedroom at home?
+
+
+
+This is where Radiesthesia and modern science converge
+
+You’ll learn to combine traditional instruments—rods and pendulums—with advanced EMF meters to detect magnetic anomalies, underground water streams, and energetic disturbances that influence your well-being
+
+
+
+
+
+🧭 Inside this book, you’ll discover:
+
+✅ The physics of how geopathic zones disrupt biological rhythms and why your nervous system is the first to respond
+
+✅ How to locate Hartmann and Curry grid intersections, underground water streams, and fault-line emissions
+
+✅ Why certain points in your home may be silently draining your energy—and how to restore equilibrium
+
+✅ Practical methods for using radiesthesia, magnetometers, and EMF meters to map energetic safety zones
+
+✅ The forgotten art of ancient site-planning—why temples, pyramids, and sacred sites were built where they were
+
+✅ Modern strategies to harmonize your environment using ancestral remedies and electromagnetic shielding technologies
+
+
+
+Whether you’re a holistic health seeker, a scientist of the unseen, or simply curious about the invisible forces that shape your vitality, Geopathies gives you the knowledge to transform your surroundings into a source of strength rather than stress
+
+
+
+🌍 Your health doesn’t just depend on what you eat or think. It depends on where you stand—and what lies beneath your feet
+
+
+
+This is Volume II of The Biohacker’s Guide Collection—your next step toward mastering the hidden energies that shape your body, mind, and spirit
+
+-----
+
+Radiesthesia: The Biohacker’s Guide Collection
+
+by César Arce (Author)  Format: Paperback
+
+Book 3 of 6: The Biohacker’s Guide Collection
+
+See all formats and editions
+
+📘 Radiesthesia – Decode the Invisible. Discover the Science of Subtle Energies.
+
+
+
+The Biohacker’s Guide Collection – Volume III
+
+
+
+Radiesthesia—the art of “sensing radiation”—is more than a forgotten curiosity. It is the bridge between geobiology, geopathic stress, and the hidden forces that shape our daily lives.
+
+In this third volume of The Biohacker’s Guide Collection, César Arce unites science, history, and practical techniques to reveal how pendulums, rods, and human intuition can detect the Earth’s geomagnetic networks—and how harmonizing with them can restore balance to body and mind.
+
+
+
+Every reference cited throughout these pages is available for the curious reader 🧐 to verify, explore, and expand upon.
+
+
+
+This work approaches radiesthesia as a purely scientific discipline, free from superstition, divination, or spiritualism.
+
+From our perspective, radiesthesia is a natural human ability—the innate capacity of our nervous system to act as a biological antenna, tuning into variations in the Earth’s geomagnetic field such as Hartmann and Curry grid crossings, underground currents, or even the subtle frequencies emitted by objects and living beings.
+
+
+
+Over years of study, we have observed that certain individuals exhibit greater electromagnetic sensitivity—a scientifically recognized phenomenon known as magnetosensitivity.
+
+This does not belong to the realm of belief, but to measurable physics.
+
+However, because these forces are invisible to the naked eye, radiesthesia has often been misunderstood, dismissed as pseudoscience, or relegated to the domain of “mysticism.”
+
+
+
+This book opens your eyes to the real science behind it—showing how magnetic and electromagnetic fields affect your health, sleep quality, and emotional balance in today’s world saturated with electrosmog.
+
+
+
+From the ancient practice of dowsing to modern theories of electromagnetic interaction, Radiesthesia unveils the subtle dialogue between environment and biology.
+
+You’ll learn how to sense, map, and harmonize these invisible currents—transforming awareness into empowerment.
+
+
+
+🧭 Inside this book, you’ll discover:
+
+✅ The origins of radiesthesia, from rhabdomancy to modern science
+
+✅ How rods and pendulums work as extensions of your nervous system
+
+✅ The links between geomagnetic anomalies and sleep, vitality, and immune resilience
+
+✅ Ancient wisdom: why temples and sacred sites were aligned with ley lines
+
+✅ Practical exercises to detect and neutralize harmful energetic zones
+
+✅ How to cultivate your own sensitivity to electromagnetic fields—without devices
+
+
+
+Whether you’re a seeker of hidden knowledge, a wellness explorer, or simply curious about the forces shaping your health, Radiesthesia equips you with both the science and the tools to sense the unseen.
+
+
+
+🌍 The invisible is not empty—it is alive.
+
+And it has always been waiting for you to discover it.
+
+------
+
+Radiesthesia & Radionics Booklet: The Biohacker’s Guide Collection
+
+by César Arce (Author)  Format: Paperback
+
+5.0 5.0 out of 5 stars   (1)
+
+Book 4 of 6: The Biohacker’s Guide Collection
+
+See all formats and editions
+
+📘 Radiesthesia & Radionics Booklet – Detect. Decode. Transform.
+
+
+
+The Biohacker’s Guide Collection – Practical Edition
+
+
+
+This booklet is your practical gateway into the twin sciences of Radiesthesia and Radionics—the art of sensing subtle Earth energies and the science of transmitting corrective frequencies to restore balance.
+
+
+
+Author César Arce distills years of research and experimentation into a clear, step-by-step manual designed for both beginners and advanced explorers. Using rods, pendulums, and modern EMF technology, you’ll learn how to detect geomagnetic grids, locate geopathic stress zones, and apply energetic corrections that harmonize both spaces and people.
+
+
+
+-------------------------------------------------------------------------------------
+
+🛏️ The Hidden Stress Beneath Your Bed
+
+Imagine your bed resting over a geopathic stress point—what should be a night of deep rest becomes hours of tossing and turning. You wake up exhausted, blaming the mattress, the pillows, or last night’s dinner.
+
+
+
+But what if the problem isn’t on your bed… it’s beneath it?
+
+
+
+A hidden disturbance in the Earth’s magnetic field can drain your vitality night after night—silently affecting your sleep, recovery, and mood. Yet, when you travel, you often sleep perfectly.
+
+Was it the luxury of the hotel? Or simply the absence of that invisible stress line crossing your bedroom at home?
+
+
+
+This is where Radiesthesia and Radionics meet modern science.
+
+You’ll learn to combine traditional instruments—rods and pendulums—with cutting-edge EMF meters to detect magnetic anomalies, underground water streams, and energetic disturbances that influence your well-being.
+
+
+
+-------------------------------------------------------------------------------------
+
+🧭 Inside this booklet, you’ll discover:
+
+✅ How to use rods and pendulums to detect Hartmann and Curry grids
+
+✅ Simple methods to map your home or workspace and uncover hidden energy patterns
+
+✅ The fundamentals of Radionics—how symbols, diagrams, and focused intention can shift energy fields
+
+✅ Practical exercises to enhance intuition and electromagnetic sensitivity
+
+✅ Step-by-step guidance to build and use radionics paper devices and pendulum machines
+
+✅ How to merge ancestral wisdom with modern EMF technology to create healthier, more coherent environments
+
+
+
+Whether you’re a curious beginner, a holistic practitioner, or a biohacker eager to explore the invisible architecture of life, this booklet gives you practical tools to apply immediately.
+
+
+
+✨ Because energy is not just detected—it can be directed.
+
+
+
+-------------------------------------------------------------------------------------
+
+💡 Biohacker Insight
+
+Your body is an antenna. Your home is a resonator.
+
+When you learn to detect, decode, and harmonize the magnetic fields around you, every night becomes restorative—and every space becomes an ally in your health.
+
+----
+
+Electroculture: The Biohacker’s Guide Collection
+
+by César Arce (Author)  Format: Paperback
+
+Book 5 of 6: The Biohacker’s Guide Collection
+
+See all formats and editions
+
+📘 Electroculture – Farming with the Living Sky
+
+
+
+The Biohacker’s Guide Collection – Volume V
+
+
+
+Electroculture – Farming with the Living Sky is the culmination of nearly thirty years of scientific research and hands-on experimentation.
+
+Every reference cited throughout these pages is available for the curious reader 🧐 to verify, explore, and expand upon.
+
+
+
+This volume unveils how atmospheric electricity—the endless dialogue between heaven and Earth—can be harnessed to transform soil, plants, and even human vitality.
+
+Visionary scientists such as Nikola Tesla once dreamed of using this “sky energy” to nourish life itself, and now, through simple copper spirals and antennas, we can begin to reclaim that forgotten science.
+
+
+
+⚡ Electricity in the Atmosphere: The Earth–Ionosphere Capacitor
+
+Between the surface of the Earth and the ionosphere—fifty to a hundred kilometers above—exists a vast electric potential of nearly 400,000 volts.
+
+Together they form what physicist Richard Feynman described as a giant spherical capacitor, silently humming with charge.
+
+Thunderstorms, solar winds, and cosmic rays keep this natural circuit alive, creating a continuous flow of electrons between sky and soil.
+
+
+
+This is not theory—it’s the living current that sustains our planet’s magnetic pulse.
+
+And when we place a copper spiral in the ground, we are not inventing a system; we are joining an existing one.
+
+
+
+✈️ Drawing from my experience as a Pilot, I have observed how aircraft accumulate electrostatic charges through constant friction with air molecules—a phenomenon known as the triboelectric effect.
+
+As these charges build up during flight, grounding systems and static discharge wicks safely release them upon landing, preventing electrical interference and restoring equilibrium.
+
+These same electrostatic and conductive principles govern the natural circuit between the Earth and the ionosphere, reminding us that every movement through the sky obeys the same laws that sustain life in the soil.
+
+A single miscalculation in handling atmospheric electricity can endanger an aircraft—just as ignoring these subtle forces can quietly unbalance an entire ecosystem 🌎.
+
+
+
+What if the sky itself were a living battery?
+
+What if every storm, every breeze, every silent pulse of the ionosphere was waiting to be received—not as danger, but as nourishment?
+
+
+
+This book invites you to experiment, to observe, and to rediscover that the boundary between atmosphere and Earth is not separation, but communication.
+
+It’s both a scientific guide and a philosophical awakening—a call to remember that farming, health, and life itself are electrical at their core.
+
+
+
+✨ May this book awaken your curiosity, your wonder, and your hands.
+
+For the sky is alive, the soil listens, and together, they are still teaching us how to grow. 😍
+
+
+
+🌌 Reclaim the ancient knowledge. Rediscover the science behind it. Grow with the living sky.
+
+-----------------------------------------
+
+
+https://www.amazon.com/dp/B0FV8QQLTY
+
+Excelente!!
+Ahora en la seccion /Books exactamente debajo de la seccion "The Biohacker's Guide Collection" Quiero agregar otra seccion de Libros "The Adventures of Caesar Maple"
+aqui quiero promover mi Libro de venta en Amazon 'https://www.amazon.com/dp/B0FV8QQLTY'
+Aqui la descripcion del Libro:
+The Lost Secret of Inca’s Stones: The Adventures of Caesar Maple
+by Caesar Maple (Author)  Format: Paperback
+Book 1 of 1: The Adventures of Caesar Maple
+See all formats and editions
+🏺 The Lost Secret of Inca’s Stones
+The Adventures of Caesar Maple — Book One
+by César Arce
+
+Inspired by real expeditions and historical enigmas.
+
+Each chapter of The Lost Secret of Inca’s Stones reveals a rarely told piece of history and unveils a new layer of mystery: a lost science, impossible maps, and an ancient formula hidden deep in the Amazon and high in the Andes.
+
+Unraveling the mystery. Decoding the science. Uncovering the lost art of the ancient builders.
+
+London, 1926. Decorated RAF pilot and reluctant archaeologist Caesar Maple thinks he’s traded dogfights for dusty archives—until a letter arrives with five unnerving words: “Beware the Keepers of Heads.”
+What begins as a scholarly inquiry becomes a perilous trek from the British Museum’s quiet halls to the knife-edged Andes and the uncharted lungs of the Amazon.
+
+Guided by clues that should not exist—stones that “remember” shape, glyphs where no glyphs belong, maps that align temples across the world—Maple joins a fractured team:
+
+Penelope, a gifted dowser whose instruments work where compasses fail,
+
+Finch, a meticulous scientist cataloging the impossible,
+
+Collins, a battle-tested bruiser with a soldier’s conscience—
+
+each hunted by shadows, rival explorers, and secret societies.
+
+🪙 Their journey carves a living map across Ecuador, Peru, and Bolivia: Shuar lands, forbidden caverns, Machu Picchu’s misted terraces, the Nazca plateau, Cuzco’s cyclopean walls, Lake Titicaca’s cold mirror, and Tiwanaku’s stone gate.
+In river towns trading in rumors and sanctuaries where the air itself hums, Maple follows a thread of engineering rumored to soften stone—a technology capable of raising empires… or erasing them.
+
+But every answer demands a price. A ruthless cabal—the Glove—and other nameless hunters close in, seeking the same prize: the Andean Stone Codex, said to contain the method, the myth, and the map.
+
+As betrayals strike and storms close their circle, Maple must choose what he is willing to sacrifice: the secret, his team… or the truth.
+
+Perfect for fans of Indiana Jones, Clive Cussler, The Lost City of Z, Dan Brown, and readers who crave:
+
+History-driven thrillers
+
+Myth-meets-science mysteries
+
+Cinematic, real-world settings
+
+Lost technologies and ancient enigmas
+
+🌿 Inside you’ll find
+Hidden technologies, coded journals, and the riddle of “soft stones.”
+
+Amazonian, Inca, and high-Andean ceremonial sites that seem to follow a forgotten logic.
+
+Jungle trials, mountain sieges, and enemies who kill to keep a secret buried.
+
+A finale that unlocks Book Two: The Lost Secret of the Pharaoh Stones.
+
+🔑 Unearth the secret—before others do.
+Book One of a sweeping historical-adventure saga where legend and reality collide.
+
+⭐ If these pages pulled you into the mystery—leave a review and share your journey.
+
+Every ⭐⭐⭐⭐⭐ helps new explorers uncover the secret.
+
+-------------------------
+
+
+En el link de Podcast Spotify "The Biohacker's Guide by Cesar Arce
+el URL es https://open.spotify.com/show/3yjeOceJndIMNIQQN6IR9s
+
