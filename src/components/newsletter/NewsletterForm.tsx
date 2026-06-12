@@ -34,12 +34,23 @@ export default function NewsletterForm() {
     }
   }
 
+  const spamNote = locale === 'es'
+    ? 'Revisa tu carpeta de Spam si no lo recibes en los próximos minutos.'
+    : locale === 'fr-CA'
+    ? 'Vérifiez votre dossier Spam si vous ne le recevez pas dans les prochaines minutes.'
+    : 'Check your Spam folder if you don\'t see it within a few minutes.';
+
   if (submitted) {
     return (
       <div className="max-w-md mx-auto text-center py-4">
         <div className="text-3xl mb-3">✅</div>
         <p className="text-green-400 font-semibold text-lg mb-1">{t('success')}</p>
-        <p className="text-zinc-500 text-sm">Check your inbox — your free guide link is on its way.</p>
+        <p className="text-zinc-500 text-sm mb-3">
+          {locale === 'es' ? 'Tu guía gratuita está en camino.' : locale === 'fr-CA' ? 'Votre guide gratuit est en route.' : 'Your free guide is on its way.'}
+        </p>
+        <p className="text-amber-400/80 text-xs bg-amber-400/10 border border-amber-400/20 rounded-lg px-4 py-2">
+          📁 {spamNote}
+        </p>
       </div>
     );
   }
