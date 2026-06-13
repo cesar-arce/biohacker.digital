@@ -110,6 +110,20 @@ export default async function BooksPage({ params }: { params: Promise<{ locale: 
   }
   if (books.length === 0) books = PLACEHOLDER_BOOKS;
 
+  // Spanish edition overrides — different covers and Amazon.ca links
+  const ES_OVERRIDES: Record<string, { cover_image_url: string; amazon_url: string }> = {
+    'geobiology':                  { cover_image_url: '/images/books/Geobiologia.png',       amazon_url: 'https://www.amazon.ca/dp/B0DMVJFTVY?tag=biohackerdi0b-20' },
+    'geopathies':                  { cover_image_url: '/images/books/Geopatias.png',          amazon_url: 'https://www.amazon.ca/dp/1069107816?tag=biohackerdi0b-20' },
+    'radiesthesia':                { cover_image_url: '/images/books/Radiestesia.png',        amazon_url: 'https://www.amazon.ca/dp/B0DPMYF2WF?tag=biohackerdi0b-20' },
+    'radiesthesia-radionics-booklet': { cover_image_url: '/images/books/CartillaRadiestesia.png', amazon_url: 'https://www.amazon.ca/dp/B0DPST5LKX?tag=biohackerdi0b-20' },
+  };
+
+  if (locale === 'es') {
+    books = books.map((book) =>
+      ES_OVERRIDES[book.slug] ? { ...book, ...ES_OVERRIDES[book.slug] } : book
+    );
+  }
+
   const filterKeys = ['filterAll', 'filterGeobiology', 'filterGeopathies', 'filterRadiesthesia', 'filterElectroculture', 'filterPractical'] as const;
 
   return (
