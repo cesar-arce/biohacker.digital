@@ -123,6 +123,11 @@ export default async function BooksPage({ params }: { params: Promise<{ locale: 
           </span>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">{t('title')}</h1>
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">{t('subtitle')}</p>
+          {locale === 'fr-CA' && (
+            <p className="mt-4 inline-block px-4 py-2 text-sm text-amber-400/90 bg-amber-400/10 border border-amber-400/20 rounded-full">
+              {t('languageNote')}
+            </p>
+          )}
         </div>
 
         {/* Filter tabs */}
