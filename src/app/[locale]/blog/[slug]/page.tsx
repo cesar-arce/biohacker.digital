@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -449,6 +449,7 @@ function renderInline(text: string): React.ReactNode {
 // ── Page ──────────────────────────────────────────────────────────────────────
 export default async function BlogPostPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale, slug } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'blog' });
 
   // Try Supabase first (locale-specific content); fall back to FALLBACK (EN) on any error
