@@ -182,9 +182,86 @@ const PRODUCTS = [
     url: `https://www.amazon.ca/dp/B000NBDTQI?tag=${AFFILIATE_TAG}`,
     image: '/images/products/OutletTester.jpg',
   },
+  {
+    id: 26, category: 'Pendulum',
+    name: 'Natural Gemstone Crystal Pendulum – Dowsing, Divination & Chakra Reiki',
+    description: 'Quartz crystal pendulum (35×18mm) with 18cm chain and jewelry pouch. Ideal for divination, dowsing, chakra reiki, and communicating with subtle energy fields.',
+    url: `https://www.amazon.ca/dp/B01MQJREAI?tag=${AFFILIATE_TAG}`,
+    image: '/images/products/CristalPendulum.jpg',
+  },
+  {
+    id: 27, category: 'Pendulum',
+    name: '4-Ring Copper Chamber Pendulum – Energy Healing & Care',
+    description: 'Copper metal chamber pendulum with 4-ring plate design. Used for spiritual growth, energy healing, and improving bio-energetic sensitivity. Enhances subtle energy perception.',
+    url: `https://www.amazon.ca/dp/B07DTJL8CB?tag=${AFFILIATE_TAG}`,
+    image: '/images/products/Pendulum1.jpg',
+  },
+  {
+    id: 28, category: 'Frequency',
+    name: 'Healing Tuning Forks Set – 128Hz, 136Hz, 256Hz, 384Hz',
+    description: 'Premium aluminum alloy tuning forks with long sustain and precise frequency accuracy. Includes weighted & unweighted forks, reflex hammer, activator, and gem feet for sound therapy, chakra, and meditation.',
+    url: `https://www.amazon.ca/dp/B0FN438K9M?tag=${AFFILIATE_TAG}`,
+    image: '/images/products/Frequency1.jpg',
+  },
+  {
+    id: 29, category: 'Frequency',
+    name: 'Electronic Tibetan Singing Bowl – 8 Healing Frequencies (369–963 Hz)',
+    description: 'USB-C rechargeable digital singing bowl replicating sacred Tibetan sound. 8 healing frequencies, auto/manual mode, vibration & timer. Perfect for yoga, Reiki, meditation, and relaxation.',
+    url: `https://www.amazon.ca/dp/B0FDX3JSMQ?tag=${AFFILIATE_TAG}`,
+    image: '/images/products/Frequency2.jpg',
+  },
+  {
+    id: 30, category: 'Electroculture',
+    name: 'Electroculture Copper Gardening Antenna – 6 Pack, 43cm Stakes',
+    description: '99.9% copper wire antennas wound clockwise onto wooden sticks. Harnesses earth\'s natural energy to increase plant growth, reduce irrigation, and lower fertilizer needs.',
+    url: `https://www.amazon.ca/dp/B0H3ZD7SGQ?tag=${AFFILIATE_TAG}`,
+    image: '/images/products/Electroculture1.jpg',
+  },
+  {
+    id: 31, category: 'Electroculture',
+    name: 'Electroculture Copper Plant Stakes – 6 Pack, 12/17" Telescopic Antennas',
+    description: 'Advanced electroculture antennas (30/43cm) crafted from 99.9% pure solid copper on natural wood. Utilizes magnetic fields for optimal plant vitality, vegetables, and crop yields.',
+    url: `https://www.amazon.ca/dp/B0H4YXWKLS?tag=${AFFILIATE_TAG}`,
+    image: '/images/products/Electroculture2.jpg',
+  },
+  {
+    id: 32, category: 'Electroculture',
+    name: 'Electroculture Copper Kit – 3 Pack, 10-Gauge 99% Copper Wire Antennas',
+    description: 'Thick 10-gauge pure copper antennas inspired by Tesla coil principles for optimal energy flow. Stimulates stronger roots and increases yields in garden beds, raised planters, or indoor pots.',
+    url: `https://www.amazon.ca/dp/B0GL8FM7M6?tag=${AFFILIATE_TAG}`,
+    image: '/images/products/Electroculture3.jpg',
+  },
+  {
+    id: 33, category: 'Electroculture',
+    name: 'Electroculture Coil Winding Jig – Spiral Antenna Maker Tool',
+    description: 'Precision jig for crafting copper wire coils, spirals, and Fibonacci cone antennas. Adjustable for various wire gauges. Creates consistent electroculture antennas for enhanced plant growth.',
+    url: `https://www.amazon.ca/dp/B0FHYPT8B5?tag=${AFFILIATE_TAG}`,
+    image: '/images/products/Electroculture4.jpg',
+  },
+  {
+    id: 34, category: 'TENS Machine',
+    name: "DR-HO'S Neck Pain Pro – TENS & EMS Therapy for Neck & Shoulder",
+    description: "Developed by Dr. Michael Ho with 35+ years of clinical experience. TENS & EMS therapy device for effective neck and shoulder pain relief — used by practitioners and home users alike.",
+    url: `https://www.amazon.ca/dp/B079Q4NWBT?tag=${AFFILIATE_TAG}`,
+    image: '/images/products/TENS_Dr-Ho.jpg',
+  },
+  {
+    id: 35, category: 'TENS Machine',
+    name: 'AUVON Dual Channel TENS EMS Unit – 24 Modes, Rechargeable',
+    description: '2-in-1 TENS + EMS device with 24 therapy modes, 12 pads, and USB-C charging. Non-invasive, drug-free pain relief used by doctors and physical therapists. Includes dustproof storage bag.',
+    url: `https://www.amazon.ca/dp/B085TL8TPJ?tag=${AFFILIATE_TAG}`,
+    image: '/images/products/TENS_Machine.jpg',
+  },
+  {
+    id: 36, category: 'Outlet Tester',
+    name: 'Grounding Tester Kit – Conductivity Pen & Outlet Continuity Tester',
+    description: 'Complete grounding product test kit: conductivity test pen + outlet tester. Verifies safety and effectiveness of grounding mats, pads, sheets, pillowcases, wristbands, and electric blankets.',
+    url: `https://www.amazon.ca/dp/B0FNMY6SSX?tag=${AFFILIATE_TAG}`,
+    image: '/images/products/OutletTester2.jpg',
+  },
 ];
 
-const CATEGORIES = ['All', 'Dowsing', 'Grounding', 'EMF', 'Radon', 'Frequency', 'Outlet Tester'];
+const CATEGORIES = ['All', 'Dowsing', 'Pendulum', 'Grounding', 'EMF', 'Radon', 'Frequency', 'Electroculture', 'TENS Machine', 'Outlet Tester'];
 const PAGE_SIZE = 12;
 
 const COPY = {
@@ -216,10 +293,13 @@ const COPY = {
 
 const CATEGORY_COLORS: Record<string, string> = {
   Dowsing:          'bg-emerald-400/10 text-emerald-400 border-emerald-400/30',
+  Pendulum:         'bg-teal-400/10 text-teal-400 border-teal-400/30',
   Grounding:        'bg-amber-400/10 text-amber-400 border-amber-400/30',
   EMF:              'bg-red-400/10 text-red-400 border-red-400/30',
   Radon:            'bg-purple-400/10 text-purple-400 border-purple-400/30',
   Frequency:        'bg-blue-400/10 text-blue-400 border-blue-400/30',
+  Electroculture:   'bg-lime-400/10 text-lime-400 border-lime-400/30',
+  'TENS Machine':   'bg-orange-400/10 text-orange-400 border-orange-400/30',
   'Outlet Tester':  'bg-zinc-400/10 text-zinc-400 border-zinc-400/30',
 };
 
