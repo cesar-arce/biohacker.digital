@@ -110,6 +110,13 @@ export default async function BooksPage({ params }: { params: Promise<{ locale: 
   }
   if (books.length === 0) books = PLACEHOLDER_BOOKS;
 
+  // Enforce canonical display order
+  const SLUG_ORDER = ['geobiology', 'geopathies', 'radiesthesia', 'radiesthesia-radionics-booklet', 'electroculture', 'biomagnetism'];
+  books = [
+    ...SLUG_ORDER.map((slug) => books.find((b) => b.slug === slug)).filter(Boolean) as Book[],
+    ...books.filter((b) => !SLUG_ORDER.includes(b.slug)),
+  ];
+
   // Spanish edition overrides — different covers and Amazon.ca links
   const ES_OVERRIDES: Record<string, { cover_image_url: string; amazon_url: string }> = {
     'geobiology':                  { cover_image_url: '/images/books/Geobiologia.png',       amazon_url: 'https://www.amazon.ca/dp/B0DMVJFTVY?tag=biohackerdi0b-20' },
