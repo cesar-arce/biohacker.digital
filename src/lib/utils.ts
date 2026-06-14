@@ -5,7 +5,8 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function buildAmazonUrl(baseUrl: string): string {
+export function buildAmazonUrl(baseUrl: string | null | undefined): string {
+  if (!baseUrl) return '#';
   const tag = process.env.NEXT_PUBLIC_AMAZON_AFFILIATE_TAG;
   if (!tag) return baseUrl;
   const sep = baseUrl.includes('?') ? '&' : '?';

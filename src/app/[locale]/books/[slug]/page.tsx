@@ -177,8 +177,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
   const { locale, slug } = await params;
-  let book: Book | null = null;
-  try { book = await getBookBySlug(slug); } catch { book = FALLBACK[slug] ?? null; }
+  let book: Book | null = FALLBACK[slug] ?? null;
+  if (!book) {
+    try { book = await getBookBySlug(slug); } catch { /* ignore */ }
+  }
   if (!book) return { title: 'Book Not Found' };
   const title = book.title[locale as Locale] ?? book.title['en'];
   const description = book.description[locale as Locale] ?? book.description['en'];
@@ -200,9 +202,11 @@ export default async function BookDetailPage({
   const t = await getTranslations({ locale, namespace: 'books' });
   const tNav = await getTranslations({ locale, namespace: 'nav' });
 
-  let book: Book | null = null;
-  try { book = await getBookBySlug(slug); } catch { /* ignore */ }
-  if (!book) book = FALLBACK[slug] ?? null;
+  // Prioritize FALLBACK for known slugs — Supabase only supplements unknown ones
+  let book: Book | null = FALLBACK[slug] ?? null;
+  if (!book) {
+    try { book = await getBookBySlug(slug); } catch { /* ignore */ }
+  }
   if (!book) notFound();
 
   const title = book.title[locale as Locale] ?? book.title['en'];
