@@ -451,9 +451,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
   const { locale, slug } = await params;
   const t = await getTranslations({ locale, namespace: 'blog' });
 
-  let post: BlogPost | null = null;
-  try { post = await getBlogPostBySlug(slug, locale); } catch { /* ignore */ }
-  if (!post) post = FALLBACK[slug] ?? null;
+  // Prioritize FALLBACK for known slugs — prevents 500s from Supabase data issues
+  let post: BlogPost | null = FALLBACK[slug] ?? null;
+  if (!post) {
+    try { post = await getBlogPostBySlug(slug, locale); } catch { /* ignore */ }
+  }
   if (!post) notFound();
 
   return (
