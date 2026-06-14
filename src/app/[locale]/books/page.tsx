@@ -92,7 +92,7 @@ const PLACEHOLDER_BOOKS: Book[] = [
   },
 ];
 
-const ADVENTURE_BOOK_AMAZON = 'https://www.amazon.com/dp/B0FTWNVW78';
+const ADVENTURE_BOOK_AMAZON = 'https://www.amazon.com/dp/B0FV8QQLTY';
 const ADVENTURE_BOOK_COVER = "/images/books/The Lost Secret of Inca's Stones.png";
 const ADVENTURE_BOOK_TAGS = ['Historical Thriller', 'Adventure', 'Ancient Mysteries', 'Indiana Jones Style'];
 
