@@ -209,6 +209,17 @@ export default async function BookDetailPage({
   }
   if (!book) notFound();
 
+  // Spanish edition overrides — different covers and Amazon.ca affiliate links
+  const ES_OVERRIDES: Record<string, { cover_image_url: string; amazon_url: string }> = {
+    'geobiology':                     { cover_image_url: '/images/books/Geobiologia.png',       amazon_url: 'https://www.amazon.ca/dp/B0DMVJFTVY?tag=biohackerdi0b-20' },
+    'geopathies':                     { cover_image_url: '/images/books/Geopatias.png',          amazon_url: 'https://www.amazon.ca/dp/1069107816?tag=biohackerdi0b-20' },
+    'radiesthesia':                   { cover_image_url: '/images/books/Radiestesia.png',        amazon_url: 'https://www.amazon.ca/dp/B0DPMYF2WF?tag=biohackerdi0b-20' },
+    'radiesthesia-radionics-booklet': { cover_image_url: '/images/books/CartillaRadiestesia.png', amazon_url: 'https://www.amazon.ca/dp/B0DPST5LKX?tag=biohackerdi0b-20' },
+  };
+  if (locale === 'es' && ES_OVERRIDES[slug]) {
+    book = { ...book, ...ES_OVERRIDES[slug] };
+  }
+
   const title = book.title[locale as Locale] ?? book.title['en'];
   const description = book.description[locale as Locale] ?? book.description['en'];
   const learnings = KEY_LEARNINGS[slug] ?? DEFAULT_LEARNINGS;
