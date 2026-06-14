@@ -110,6 +110,10 @@ export default async function BooksPage({ params }: { params: Promise<{ locale: 
   }
   if (books.length === 0) books = PLACEHOLDER_BOOKS;
 
+  // Always include Biomagnetism (coming soon) if not returned by Supabase
+  const BIOMAGNETISM = PLACEHOLDER_BOOKS.find((b) => b.slug === 'biomagnetism')!;
+  if (!books.find((b) => b.slug === 'biomagnetism')) books = [...books, BIOMAGNETISM];
+
   // Enforce canonical display order
   const SLUG_ORDER = ['geobiology', 'geopathies', 'radiesthesia', 'radiesthesia-radionics-booklet', 'electroculture', 'biomagnetism'];
   books = [
