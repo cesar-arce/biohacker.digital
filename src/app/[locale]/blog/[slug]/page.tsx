@@ -392,17 +392,8 @@ May your copper spirals carry that current forward.
   },
 };
 
-// ── Static params ─────────────────────────────────────────────────────────────
-export async function generateStaticParams() {
-  try {
-    const locales = ['en', 'fr-CA', 'es'];
-    const results = await Promise.all(locales.map((locale) => getBlogPosts(locale)));
-    const slugs = new Set(results.flat().map((p) => p.slug));
-    return Array.from(slugs).map((slug) => ({ slug }));
-  } catch {
-    return Object.keys(FALLBACK).map((slug) => ({ slug }));
-  }
-}
+// Force dynamic rendering — page uses cookies() via Supabase client
+export const dynamic = 'force-dynamic';
 
 // ── Metadata ──────────────────────────────────────────────────────────────────
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
