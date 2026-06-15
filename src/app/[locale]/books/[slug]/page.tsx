@@ -248,7 +248,7 @@ export default async function BookDetailPage({
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           {/* Cover */}
-          <div className="sticky top-24">
+          <div className="md:sticky md:top-24">
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-zinc-800 shadow-2xl shadow-black/60 border border-zinc-700">
               {book.cover_image_url ? (
                 <Image src={book.cover_image_url} alt={title} fill className="object-cover" />
