@@ -2,7 +2,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { getBlogPostBySlug, getBlogPosts } from '@/lib/supabase/queries';
+import { getBlogPostBySlug } from '@/lib/supabase/queries';
 import { formatDate } from '@/lib/utils';
 import type { BlogPost } from '@/types';
 
@@ -464,7 +464,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
 
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-6">
-          {post.tags.map((tag) => (
+          {(post.tags ?? []).map((tag) => (
             <span key={tag} className="px-3 py-1 text-xs rounded-full bg-green-400/10 text-green-400 border border-green-400/20">
               {tag}
             </span>
