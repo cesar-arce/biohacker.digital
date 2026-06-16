@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createClient as createServerClient } from '@/lib/supabase/server';
 import { createClient as createAdminClient } from '@supabase/supabase-js';
 import { Resend } from 'resend';
+import { rateLimit, getIP } from '@/lib/rate-limit';
 
 const SUBJECTS: Record<string, string> = {
   en: 'Your sign-in link for Biohacker.digital',
@@ -28,6 +29,11 @@ const IGNORES: Record<string, string> = {
 };
 
 export async function POST(req: NextRequest) {
+  // 3 requests per IP per 15 minutes — prevents email bombing
+  if (!rateLimit(`magic-link:${getIP(req)}`, 3, 15 * 60 * 1000)) {
+    return NextResponse.json({ error: 'Too many requests. Please try again in a few minutes.' }, { status: 429 });
+  }
+
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { email, locale = 'en', redirectTo } = await req.json();

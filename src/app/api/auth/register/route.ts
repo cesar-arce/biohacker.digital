@@ -1,7 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
+import { rateLimit, getIP } from '@/lib/rate-limit';
 
 export async function POST(req: NextRequest) {
+  // 5 requests per IP per 10 minutes
+  if (!rateLimit(`register:${getIP(req)}`, 5, 10 * 60 * 1000)) {
+    return NextResponse.json({ error: 'Too many requests. Please try again later.' }, { status: 429 });
+  }
+
   try {
     const { email, name, interest, locale = 'en' } = await req.json();
 
