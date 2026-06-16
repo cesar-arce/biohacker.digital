@@ -39,7 +39,7 @@ export default function Navbar() {
           <span className="w-8 h-8 rounded-lg bg-green-400 flex items-center justify-center">
             <span className="text-zinc-950 font-black text-sm">BH</span>
           </span>
-          <span className="font-bold text-white hidden sm:block group-hover:text-green-400 transition-colors">
+          <span className="font-bold text-white group-hover:text-green-400 transition-colors text-sm sm:text-base">
             Biohacker<span className="text-green-400">.digital</span>
           </span>
         </Link>
