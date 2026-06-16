@@ -27,7 +27,7 @@ export interface AboutContent {
 const en: AboutContent = {
   collectionIntro: 'Each volume in The Biohacker\'s Guide Collection is a step into the invisible architecture of life — where energy, frequency, and vibration converge with modern science to illuminate new paths to health, harmony, and reconnection with the Earth.',
   aboutAuthorLabel: 'About the Author',
-  authorRole: 'Author · Pilot · Explorer',
+  authorRole: 'Author · Storyteller · Pilot · Explorer',
   bio: [
     'Some lives are lived in straight lines. His has been a spiral — always descending deeper, always returning transformed.',
     'At six years old, beneath a canopy of stars in the World Organization of the Scout Movement, he learned to read what most people no longer see: the language of nature written in terrain, wind, and silence. Survival. Navigation. The invisible grammar of the wilderness. What began as a boy\'s adventure became a lifelong discipline of attention.',
@@ -79,7 +79,7 @@ const en: AboutContent = {
 const es: AboutContent = {
   collectionIntro: 'Cada volumen de La Colección de la Guía del Biohacker es un paso hacia la arquitectura invisible de la vida — donde la energía, la frecuencia y la vibración convergen con la ciencia moderna para iluminar nuevos caminos hacia la salud, la armonía y la reconexión con la Tierra.',
   aboutAuthorLabel: 'Sobre el Autor',
-  authorRole: 'Autor · Piloto · Explorador',
+  authorRole: 'Autor · Narrador · Piloto · Explorador',
   bio: [
     'Algunas vidas se viven en línea recta. La suya ha sido una espiral — siempre descendiendo más profundo, siempre regresando transformado.',
     'A los seis años, bajo un manto de estrellas en la Organización Mundial del Movimiento Scout, aprendió a leer lo que la mayoría de las personas ya no ve: el lenguaje de la naturaleza escrito en el terreno, el viento y el silencio. Supervivencia. Navegación. La gramática invisible de la naturaleza. Lo que comenzó como la aventura de un niño se convirtió en una disciplina de atención para toda la vida.',
@@ -131,7 +131,7 @@ const es: AboutContent = {
 const fr: AboutContent = {
   collectionIntro: 'Chaque volume de La Collection du Guide du Biohacker est un pas vers l\'architecture invisible de la vie — là où l\'énergie, la fréquence et la vibration convergent avec la science moderne pour illuminer de nouveaux chemins vers la santé, l\'harmonie et la reconnexion avec la Terre.',
   aboutAuthorLabel: 'À propos de l\'Auteur',
-  authorRole: 'Auteur · Pilote · Explorateur',
+  authorRole: 'Auteur · Conteur · Pilote · Explorateur',
   bio: [
     'Certaines vies se déroulent en ligne droite. La sienne a été une spirale — toujours descendant plus profond, toujours revenant transformé.',
     'À six ans, sous un dais d\'étoiles au sein de l\'Organisation Mondiale du Mouvement Scout, il a appris à lire ce que la plupart des gens ne voient plus : le langage de la nature écrit dans le terrain, le vent et le silence. Survie. Navigation. La grammaire invisible du monde sauvage. Ce qui a commencé comme l\'aventure d\'un garçon est devenu une discipline d\'attention pour toute une vie.',
