@@ -6,7 +6,8 @@
     "community": "Communauté",
     "resources": "Ressources",
     "about": "À propos",
-    "products": "Produits"
+    "products": "Produits",
+    "courses": "Cours"
   },
   "hero": {
     "badge": "La Collection Ultime de Biohacking",
@@ -86,6 +87,39 @@
   "resources": {
     "title": "Ressources",
     "subtitle": "Matériaux promotionnels et guides visuels de La Collection du Guide du Biohacker."
+  },
+  "courses": {
+    "badge": "Laboratoire d'apprentissage",
+    "title": "Laboratoire d'apprentissage Biohacker",
+    "subtitle": "Mini-cours et ateliers pratiques pour appliquer la science de la collection. Bientôt disponible — soyez le premier informé.",
+    "course1": {
+      "title": "Votre maison comme laboratoire de biohacking",
+      "description": "Apprenez à lire votre espace de vie comme un champ énergétique. Identifiez les zones électromagnétiques, repositionnez votre espace de sommeil et créez un environnement plus sain avec des protocoles simples et pratiques.",
+      "tags": ["Géobiologie", "CEM", "Maison", "Pratique"]
+    },
+    "course2": {
+      "title": "Radiesthésie pour débutants",
+      "description": "Entraînez votre sensibilité naturelle avec des baguettes et des pendules. Apprenez à détecter des champs subtils, cartographier vos espaces et développer une méthode intuitive fondée sur l'observation et la pratique.",
+      "tags": ["Radiesthésie", "Baguettes", "Sensibilité", "Outils"]
+    },
+    "course3": {
+      "title": "Votre première antenne d'électroculture",
+      "description": "Construisez votre première spirale de cuivre et observez la différence dans vos plantes. Une expérience pratique qui relie l'électricité atmosphérique, la vitalité végétale et l'énergie vivante de la Terre.",
+      "tags": ["Électroculture", "Plantes", "Fait maison", "Électricité"]
+    },
+    "workshop": {
+      "title": "Cartographier votre chambre pour mieux dormir",
+      "description": "Votre chambre sabote peut-être votre sommeil. Dans cet atelier, apprenez à détecter les zones géopathiques, identifier les sources électromagnétiques problématiques et repositionner votre espace pour un repos profond et réparateur.",
+      "tags": ["Sommeil", "Géopathies", "Chambre", "Atelier"]
+    },
+    "notify": {
+      "title": "Soyez le premier informé",
+      "subtitle": "Laissez votre courriel et nous vous avertissons dès le lancement du premier cours.",
+      "placeholder": "Votre adresse courriel",
+      "cta": "M'avertir",
+      "disclaimer": "Pas de spam. Désabonnez-vous à tout moment.",
+      "success": "Vous êtes sur la liste ! Nous vous contacterons dès que le premier cours sera prêt."
+    }
   },
   "auth": {
     "signIn": "Se connecter",

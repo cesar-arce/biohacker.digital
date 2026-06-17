@@ -21,6 +21,7 @@ export default function Navbar() {
     { href: `/${locale}`, label: t('home') },
     { href: `/${locale}/books`, label: t('books') },
     { href: `/${locale}/products`, label: t('products') },
+    { href: `/${locale}/courses`, label: t('courses') },
     { href: `/${locale}/blog`, label: t('blog') },
     { href: `/${locale}/community`, label: t('community') },
     { href: `/${locale}/resources`, label: t('resources') },

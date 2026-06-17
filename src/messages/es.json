@@ -6,7 +6,8 @@
     "community": "Comunidad",
     "resources": "Recursos",
     "about": "Acerca de",
-    "products": "Productos"
+    "products": "Productos",
+    "courses": "Cursos"
   },
   "hero": {
     "badge": "La Colección Definitiva de Biohacking",
@@ -85,6 +86,39 @@
   "resources": {
     "title": "Recursos",
     "subtitle": "Materiales promocionales y guías visuales de La Colección de la Guía del Biohacker."
+  },
+  "courses": {
+    "badge": "Laboratorio de Aprendizaje",
+    "title": "Laboratorio de Aprendizaje Biohacker",
+    "subtitle": "Mini-cursos y talleres prácticos para aplicar la ciencia de la colección. Próximamente — sé el primero en enterarte.",
+    "course1": {
+      "title": "Tu Casa como Laboratorio de Biohacking",
+      "description": "Aprende a leer tu espacio como un campo de energía. Identifica zonas electromagnéticas, reposiciona tu área de descanso y crea un entorno más saludable con protocolos simples y accionables.",
+      "tags": ["Geobiología", "CEM", "Hogar", "Práctico"]
+    },
+    "course2": {
+      "title": "Radiestesia para Principiantes",
+      "description": "Entrena tu sensibilidad natural con varillas y péndulos. Aprende a detectar campos sutiles, mapear tus espacios y desarrollar un método intuitivo basado en la observación y la práctica.",
+      "tags": ["Radiestesia", "Varillas", "Sensibilidad", "Herramientas"]
+    },
+    "course3": {
+      "title": "Tu Primera Antena de Electrocultura",
+      "description": "Construye tu primera espiral de cobre y observa la diferencia en tus plantas. Un experimento práctico que conecta la electricidad atmosférica, la vitalidad vegetal y la energía viva de la Tierra.",
+      "tags": ["Electrocultura", "Plantas", "Hazlo tú mismo", "Electricidad"]
+    },
+    "workshop": {
+      "title": "Mapea Tu Dormitorio para Dormir Mejor",
+      "description": "Tu dormitorio puede estar saboteando tu sueño. En este taller aprende a detectar zonas geopáticas, identificar fuentes electromagnéticas problemáticas y reposicionar tu espacio para un descanso profundo y reparador.",
+      "tags": ["Sueño", "Geopatías", "Dormitorio", "Taller"]
+    },
+    "notify": {
+      "title": "Sé el primero en saberlo",
+      "subtitle": "Deja tu correo y te avisamos cuando se lance el primer curso.",
+      "placeholder": "Tu dirección de correo",
+      "cta": "Notifícame",
+      "disclaimer": "Sin spam. Cancela cuando quieras.",
+      "success": "¡Estás en la lista! Te avisaremos cuando el primer curso esté listo."
+    }
   },
   "auth": {
     "signIn": "Iniciar Sesión",

@@ -6,7 +6,8 @@
     "community": "Community",
     "resources": "Resources",
     "about": "About",
-    "products": "Products"
+    "products": "Products",
+    "courses": "Courses"
   },
   "hero": {
     "badge": "The Ultimate Biohacking Collection",
@@ -85,6 +86,39 @@
   "resources": {
     "title": "Resources",
     "subtitle": "Promotional materials and visual guides from The Biohacker's Guide Collection."
+  },
+  "courses": {
+    "badge": "Learning Lab",
+    "title": "Biohacker Learning Lab",
+    "subtitle": "Practical mini-courses and workshops to apply the science of the collection. Coming soon — be the first to know.",
+    "course1": {
+      "title": "Your Home as a Biohacking Lab",
+      "description": "Learn to read your living space as a field of energy. Identify electromagnetic zones, reposition your sleep area, and create a healthier daily environment using simple, actionable protocols.",
+      "tags": ["Geobiology", "EMF", "Home", "Practical"]
+    },
+    "course2": {
+      "title": "Radiesthesia for Beginners",
+      "description": "Train your natural sensitivity with rods and pendulums. Understand how to detect subtle fields, map your spaces, and develop an intuitive method grounded in observation and practice.",
+      "tags": ["Radiesthesia", "Dowsing", "Sensitivity", "Tools"]
+    },
+    "course3": {
+      "title": "Your First Electroculture Antenna",
+      "description": "Build your first copper spiral antenna and observe the difference in your plants. A hands-on experiment connecting atmospheric electricity, plant vitality, and the living energy of the Earth.",
+      "tags": ["Electroculture", "Plants", "DIY", "Electricity"]
+    },
+    "workshop": {
+      "title": "Mapping Your Bedroom for Better Rest",
+      "description": "Your bedroom may be sabotaging your sleep. In this workshop, learn to detect geopathic zones, identify problematic EMF sources, and reposition your space for deep, restorative rest.",
+      "tags": ["Sleep", "Geopathies", "Bedroom", "Workshop"]
+    },
+    "notify": {
+      "title": "Be the first to know",
+      "subtitle": "Leave your email and we'll notify you when the first course launches.",
+      "placeholder": "Your email address",
+      "cta": "Notify Me",
+      "disclaimer": "No spam. Unsubscribe anytime.",
+      "success": "You're on the list! We'll reach out when the first course is ready."
+    }
   },
   "auth": {
     "signIn": "Sign In",
