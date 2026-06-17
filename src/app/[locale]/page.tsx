@@ -40,8 +40,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <span className="text-green-400">{t('titleAccent')}</span>
         </h1>
 
-        <p className="max-w-2xl text-lg md:text-xl text-zinc-400 mb-10 leading-relaxed">
+        <p className="max-w-2xl text-lg md:text-xl text-zinc-400 mb-4 leading-relaxed">
           {t('subtitle')}
+        </p>
+        <p className="max-w-2xl text-lg md:text-xl text-zinc-400 mb-10 leading-relaxed">
+          {t('subtitle2')}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mb-20">
