@@ -135,6 +135,7 @@ export default async function BooksPage({ params }: { params: Promise<{ locale: 
     );
   }
 
+  const tPath = await getTranslations({ locale, namespace: 'readingPath' });
   const filterKeys = ['filterAll', 'filterGeobiology', 'filterGeopathies', 'filterRadiesthesia', 'filterElectroculture', 'filterPractical'] as const;
 
   return (
@@ -170,6 +171,82 @@ export default async function BooksPage({ params }: { params: Promise<{ locale: 
           {books.map((book) => (
             <BookCard key={book.id} book={book} />
           ))}
+        </div>
+
+        {/* ── Reading Path Infographic ── */}
+        <div className="mt-24 mb-8">
+          <div className="text-center mb-10">
+            <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-widest uppercase rounded-full border border-green-400/40 text-green-400 bg-green-400/10">
+              {tPath('badge')}
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">{tPath('title')}</h2>
+            <p className="text-zinc-400 text-base max-w-xl mx-auto">{tPath('subtitle')}</p>
+          </div>
+
+          {/* Steps grid — 3 cols × 2 rows */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+            {[
+              { roman: 'I',   titleKey: 'vol1title', descKey: 'vol1desc', coming: false },
+              { roman: 'II',  titleKey: 'vol2title', descKey: 'vol2desc', coming: false },
+              { roman: 'III', titleKey: 'vol3title', descKey: 'vol3desc', coming: false },
+              { roman: 'IV',  titleKey: 'vol4title', descKey: 'vol4desc', coming: false },
+              { roman: 'V',   titleKey: 'vol5title', descKey: 'vol5desc', coming: false },
+              { roman: 'VI',  titleKey: 'vol6title', descKey: 'vol6desc', coming: true  },
+            ].map((vol, i) => (
+              <div
+                key={vol.roman}
+                className={`relative flex gap-4 items-start p-5 rounded-2xl border transition-colors
+                  ${vol.coming
+                    ? 'bg-amber-400/5 border-amber-400/20'
+                    : 'bg-zinc-900 border-zinc-800 hover:border-green-400/30'
+                  }`}
+              >
+                {/* Volume circle */}
+                <div className={`flex-shrink-0 w-12 h-12 rounded-full flex flex-col items-center justify-center border-2
+                  ${vol.coming
+                    ? 'bg-amber-400/10 border-amber-400/40'
+                    : 'bg-green-400/10 border-green-400/40'
+                  }`}
+                >
+                  <span className={`text-[9px] font-semibold tracking-widest uppercase leading-none ${vol.coming ? 'text-amber-400' : 'text-green-400'}`}>Vol.</span>
+                  <span className={`text-sm font-bold leading-tight ${vol.coming ? 'text-amber-300' : 'text-green-300'}`}>{vol.roman}</span>
+                </div>
+
+                {/* Content */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 mb-1 flex-wrap">
+                    <h3 className="text-white font-semibold text-sm leading-snug">
+                      {tPath(vol.titleKey as Parameters<typeof tPath>[0])}
+                    </h3>
+                    {vol.coming && (
+                      <span className="text-[10px] font-bold tracking-wide uppercase px-2 py-0.5 rounded-full bg-amber-400/15 text-amber-400 border border-amber-400/30 whitespace-nowrap">
+                        {tPath('comingSoon')}
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-zinc-500 text-xs leading-relaxed">
+                    {tPath(vol.descKey as Parameters<typeof tPath>[0])}
+                  </p>
+                </div>
+
+                {/* Connector arrow (right side, hidden on last of each row) */}
+                {i !== 2 && i !== 5 && (
+                  <div className="hidden sm:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 w-6 h-6 items-center justify-center">
+                    <span className="text-green-600 text-lg">›</span>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Outcome banner */}
+          <div className="flex items-start gap-4 bg-zinc-900 border border-zinc-800 rounded-2xl px-6 py-5">
+            <span className="text-2xl flex-shrink-0">🌍</span>
+            <p className="text-sm text-zinc-400 leading-relaxed">
+              <span className="text-white font-semibold">{tPath('vol6title')} — </span>
+              {tPath('outcome')}
+            </p>
+          </div>
         </div>
 
         {/* ── Divider ── */}

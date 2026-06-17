@@ -87,6 +87,25 @@
     "title": "Resources",
     "subtitle": "Promotional materials and visual guides from The Biohacker's Guide Collection."
   },
+  "readingPath": {
+    "badge": "READING PATH",
+    "title": "Recommended Reading Sequence",
+    "subtitle": "Each volume prepares the ground for the next — from theory to practice.",
+    "comingSoon": "Coming Soon",
+    "outcome": "By completing the collection you will have the complete map: understand, detect, measure, practice and apply the invisible architecture that sustains your health, your home and your environment.",
+    "vol1title": "Geobiology",
+    "vol1desc": "Understand the science behind biomagnetism in plants, animals and the human body.",
+    "vol2title": "Geopathies",
+    "vol2desc": "Identify geopathic stress zones and learn how they silently affect your health.",
+    "vol3title": "Radiesthesia",
+    "vol3desc": "Techniques and instruments to detect geopathic zones that affect your health.",
+    "vol4title": "Radiesthesia & Radionics",
+    "vol4desc": "Practical techniques and exercises with rods and pendulums.",
+    "vol5title": "Electroculture",
+    "vol5desc": "Apply Earth's energy to plants, gardens and your daily life.",
+    "vol6title": "Biomagnetism",
+    "vol6desc": "Impact of magnetism on the body and techniques to restore balance."
+  },
   "courses": {
     "badge": "LEARNING LAB",
     "title": "Biohacker Learning Lab",
