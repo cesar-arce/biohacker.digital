@@ -64,24 +64,20 @@ export default function CoursesPage() {
   }
 
   return (
-    <main className="min-h-screen bg-zinc-950 pt-24 pb-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-20 px-4">
+      <div className="max-w-7xl mx-auto">
 
-        {/* Header */}
-        <div className="text-center mb-16">
-          <span className="inline-block px-3 py-1 text-xs font-medium bg-green-400/10 text-green-400 border border-green-400/20 rounded-full mb-4">
+        {/* Header — mismo estilo que Products */}
+        <div className="text-center mb-12">
+          <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-widest uppercase rounded-full border border-green-400/40 text-green-400 bg-green-400/10">
             {t('badge')}
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            {t('title')}
-          </h1>
-          <p className="text-lg text-zinc-400 max-w-2xl mx-auto">
-            {t('subtitle')}
-          </p>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{t('title')}</h1>
+          <p className="text-zinc-400 text-lg max-w-2xl mx-auto">{t('subtitle')}</p>
         </div>
 
         {/* Course grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {courses.map((course) => (
             <div
               key={course.key}
@@ -132,12 +128,12 @@ export default function CoursesPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={t('notify.placeholder')}
-                className="flex-1 bg-zinc-800 border border-zinc-700 text-white placeholder-zinc-500 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-green-400 transition-colors"
+                className="flex-1 bg-zinc-800 border border-zinc-700 text-white placeholder-zinc-500 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-green-400 transition-colors"
               />
               <button
                 type="submit"
                 disabled={loading}
-                className="bg-green-400 hover:bg-green-300 text-zinc-950 font-bold text-sm px-5 py-2.5 rounded-lg transition-colors disabled:opacity-50 whitespace-nowrap"
+                className="flex items-center justify-center gap-2 px-5 py-2.5 bg-green-400 text-zinc-950 font-bold text-sm rounded-xl hover:bg-green-300 transition-colors disabled:opacity-50 whitespace-nowrap"
               >
                 {loading ? '...' : t('notify.cta')}
               </button>
@@ -147,6 +143,6 @@ export default function CoursesPage() {
         </div>
 
       </div>
-    </main>
+    </div>
   );
 }
